@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}Actua, pirata! - Directori de grups regionals{% endblock %}
+{% block content %}
+<p id="motto">Uneix-te o crea el teu grup regional! Si en crees un, avisa per Facebook o Twitter i l'inclourem aquí.</p>
+<article id="accions">
+{% for grup in grups %}
+ <section id="{{ grup.0|slugify }}" class="grup">
+  <h1>{{ grup.0 }}</h1>
+  <div>
+   {% for link in grup.1 %}
+    <p>{{ link }}</p>
+   {% endfor %}
+  </div>
+ </section>
+{% endfor %}
+</article>
+<br>
+{% endblock %}

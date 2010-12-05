@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+<p id="motto">Escull la teva vida, escull participar en la Democràcia Directa, escull triar sempre i no cada quatre anys, informar-te i fer sentir la teva veu al Parlament. Escull el futur, escull la vida.</p>
+{% if proposta_enviada %}
+<div class="enviada">Proposta enviada correctament. Moltes gràcies!</div>
+{% endif %}
+{% if activista_enviat %}
+<div class="enviada">Gràcies per ser activista! En breu contactarem amb tots els activistes per iniciar accions. Pots començar per parlar de PIRATA.CAT als teus amics i familiars!</div>
+{% endif %}
+<article id="accions">
+{% for grup in accions %}
+ <section id="{{ grup.0|slugify }}" class="click">
+  <h1>{{ grup.0 }}</h1>
+  <div>
+   {% for accio in grup.1 %}
+   <h2>{{ accio.0 }}</h2>
+   <p>{{ accio.1 }}</p>
+   {% endfor %}
+  </div>
+ </section>
+{% endfor %}
+</article>
+<section id="la-teva">
+ <h1>Proposa més accions per a què tots arribem al Parlament:</h1>
+ <form id="proposa" name="proposa" method="POST" action="/proposa">
+  <label for="titol">Títol:</label><br>
+  <input type="text" id="titol" name="titol"><br><br>
+  <label for="clics">Número de clics:</label><br>
+  <input type="radio" name="clics" value="1" checked> 1
+  <input type="radio" name="clics" value="2"> 2
+  <input type="radio" name="clics" value="3"> 3
+  <input type="radio" name="clics" value="+3"> Més de 3<br><br>
+  <label for="proposta">Descripció:</label>
+  <textarea id="proposta" name="proposta"></textarea>
+  <input type="submit" value="Proposa!">
+ </form>
+</section>
+<br>
+<script type="text/javascript">
+twttr.anywhere(function(twitter) {
+ twitter.hovercards();
+ twitter('#follow-twitterapi').followButton("partit_pirata");
+});
+</script>
+{% endblock %}

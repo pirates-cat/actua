@@ -1,0 +1,406 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,figure,footer,header,hgroup,menu,nav,section,menu,time,mark,audio,video
+	{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article,aside,figure,footer,header,hgroup,nav,section {
+	display: block;
+}
+
+nav ul {
+	list-style: none;
+}
+
+blockquote,q {
+	quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	margin: 0;
+	padding: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+ins {
+	background-color: #ff9;
+	color: #000;
+	text-decoration: none;
+}
+
+mark {
+	background-color: #ff9;
+	color: #000;
+	font-style: italic;
+	font-weight: bold;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+abbr[title],dfn[title] {
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+input,select {
+	vertical-align: middle;
+}
+
+body {
+	font: 13px sans-serif;
+	*font-size: small;
+	*font: x-small;
+	line-height: 1.22;
+}
+
+table {
+	font-size: inherit;
+	font: 100%;
+}
+
+select,input,textarea {
+	font: 99% sans-serif;
+}
+
+pre,code,kbd,samp {
+	font-family: monospace, sans-serif;
+}
+
+body,select,input,textarea {
+	color: #000;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-weight: bold;
+	text-rendering: optimizeLegibility;
+}
+
+html {
+	-webkit-font-smoothing: antialiased;
+}
+
+a:hover,a:active {
+	outline: none;
+}
+
+a,a:active,a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+small {
+	font-size: 85%;
+}
+
+strong,th {
+	font-weight: bold;
+}
+
+td,td img {
+	vertical-align: top;
+}
+
+sub {
+	vertical-align: sub;
+	font-size: smaller;
+}
+
+sup {
+	vertical-align: super;
+	font-size: smaller;
+}
+
+pre {
+	padding: 15px;
+	white-space: pre;
+	white-space: pre-wrap;
+	white-space: pre-line;
+	word-wrap: break-word;
+}
+
+input[type="radio"] {
+	vertical-align: text-bottom;
+}
+
+input[type="checkbox"] {
+	vertical-align: bottom;
+	*vertical-align: baseline;
+}
+
+.ie6 input {
+	vertical-align: text-bottom;
+}
+
+label,input[type=button],input[type=submit],button {
+	cursor: pointer;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+button {
+	width: auto;
+	overflow: visible;
+}
+
+.ie7 img {
+	-ms-interpolation-mode: bicubic;
+}
+
+.ir {
+	display: block;
+	text-indent: -999em;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+.hidden {
+	display: none;
+	visibility: hidden;
+}
+
+.visuallyhidden {
+	position: absolute !important;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix {
+	display: inline-block;
+}
+
+* html .clearfix {
+	height: 1%;
+}
+
+.clearfix {
+	display: block;
+}
+
+/* Primary Styles
+    Author: 
+ */
+* {
+	font-family: 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
+	/* font-family: 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Verdana, Tahoma, sans-serif;*/
+}
+
+body {
+	background: #000;
+	text-align: center;
+	font-size: large;
+}
+
+header,div#container {
+	background: #FFF;
+}
+
+header,footer {
+	padding: 2em;
+}
+
+a,a:visited,a:active,a:hover {
+	text-decoration: underline;
+	font-weight: bolder;
+}
+
+div#container {
+	text-align: justify;
+}
+
+section ul,section ol {
+	padding-left: 3em;
+}
+
+#accions,#la-teva {
+	width: 720px;
+	margin: 0 auto;
+	border: 2px #999 solid;
+	padding: 1em;
+	background: #EEE;
+	margin-bottom: 1em;
+}
+
+#enrolat {
+	margin-left: 1em;
+	margin-top: 0.5em;
+}
+
+section.click h1,section.grup h1 {
+	color: #FFF;
+	background: #222;
+	font-size: x-large;
+	text-align: right;
+	border: 1px #FFF solid;
+}
+
+section.click h2,section.grup h2 {
+	background: #FFF;
+}
+
+section.click h1,section.click h2,section.click p,section.grup h1,section.grup h2,section.grup p
+	{
+	padding: 0.5em;
+}
+
+.click div,.grup click {
+	display: none;
+}
+
+#proposa {
+	padding-top: 1em;
+}
+
+#proposa #titol,#proposa textarea {
+	width: 100%;
+	border: 1px #888 solid;
+}
+
+#proposa textarea {
+	width: 99.5%;
+	height: 200px;
+}
+
+.enviada {
+	color: #ABC034;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 1em;
+	width: 720px;
+	margin: 0 auto;
+}
+
+footer {
+	background: #000;
+	color: #FFF;
+	font-size: small;
+}
+
+footer a,footer a:visited,footer a:active,footer a:hover {
+	color: #FFF;
+}
+
+footer .logo {
+	padding-bottom: 1em;
+	display: block;
+	margin: 0 auto;
+}
+
+.nota,#motto {
+	width: 720px;
+	padding: 1em;
+	color: #888;
+	margin: 0 auto;
+}
+
+#motto {
+	width: 800px;
+	text-align: center;
+	margin-top: -3em;
+	font-weight: bolder;
+	text-align: center;
+}
+
+.nota a,.nota a:visited,.nota a:active,.nota a:hover {
+	color: #FFF;
+}
+
+#menu, #xarxes {
+ text-align: center;
+ background: #000;
+ color: #FFF;
+ width: 100%;
+ font-size: large;
+ padding: 0.5em 0 0.5em 0;
+}
+
+#xarxes {
+ background: #9AA;
+ font-size: small;
+}
+
+#xarxes .no {
+ font-weight: bold;
+}
+
+.no {
+ padding-left: 0 !important;
+}
+
+bar li {
+ display: inline;
+ padding-left: 2em;
+}
+
+a, a:visited, a:hover {
+ text-decoration: none;
+}
+
+.bar a, .bar a:visited, .bar a:hover {
+ color: #FFF;
+}
+
+.bar a:hover {
+ text-decoration: underline;
+}
+
+
+@media all and (orientation:portrait) {
+}
+
+@media all and (orientation:landscape) {
+}
+
+/* Grade-A Mobile Browsers */
+@media screen and (max-device-width: 480px) {
+	html {
+		-webkit-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+	}
+}
